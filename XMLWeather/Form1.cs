@@ -51,6 +51,7 @@ namespace XMLWeather
                 //TODO: if day object not null add to the days list
                 days.Add(d);
             }
+            reader.Close();
         }
 
         private void ExtractCurrent()
@@ -68,9 +69,7 @@ namespace XMLWeather
             reader.ReadToFollowing("weather");
             days[0].condition = reader.GetAttribute("number");
 
-            reader.ReadToFollowing("lastupdate");
-            days[0].lastUpdate = reader.GetAttribute("value");
-
+            reader.Close();
         }
 
 

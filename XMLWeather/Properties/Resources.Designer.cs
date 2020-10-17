@@ -63,9 +63,29 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Blue_Background {
+            get {
+                object obj = ResourceManager.GetObject("Blue_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cloudy {
             get {
                 object obj = ResourceManager.GetObject("Cloudy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Grey_Background {
+            get {
+                object obj = ResourceManager.GetObject("Grey_Background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +106,16 @@ namespace XMLWeather.Properties {
         internal static System.Drawing.Bitmap Rainy {
             get {
                 object obj = ResourceManager.GetObject("Rainy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_Background {
+            get {
+                object obj = ResourceManager.GetObject("Red_Background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
