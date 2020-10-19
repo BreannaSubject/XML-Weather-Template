@@ -73,6 +73,9 @@ namespace XMLWeather
             reader.ReadToFollowing("weather");
             days[0].condition = reader.GetAttribute("number");
 
+            reader.ReadToFollowing("lastupdate");
+            days[0].date = reader.GetAttribute("value");
+
             reader.Close();
         }
 

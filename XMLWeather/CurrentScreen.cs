@@ -22,6 +22,7 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            DateTime currentTime = Convert.ToDateTime(Form1.days[0].date);
             double currentTemp = Math.Round(Convert.ToDouble(Form1.days[0].currentTemp));
             double minTemp = Math.Round(Convert.ToDouble(Form1.days[0].tempLow));
             double maxTemp = Math.Round(Convert.ToDouble(Form1.days[0].tempHigh));
@@ -30,7 +31,7 @@ namespace XMLWeather
             tempLabel.Text = currentTemp.ToString("#") + "°C";
             minOutput.Text = minTemp.ToString("#") + "°C";
             maxOutput.Text = maxTemp.ToString("#") + "°C";
-            timeLabel.Text = "Last Updated: " + DateTime.Now.ToString("dd-MM-yy hh:mm");
+            timeLabel.Text = "Last Updated: " + currentTime.ToString("dd-MM-yy hh:mm tt");
 
             if (currentTemp >= 20)
             {
@@ -45,7 +46,7 @@ namespace XMLWeather
                 BackgroundImage = Properties.Resources.Blue_Background;
             }
 
-            if (timeLabel.Text != DateTime.Now.ToString("dd-MM-yy hh:mm"))
+            if (timeLabel.Text != currentTime.ToString("dd-MM-yy hh:mm"))
             {
                 Form1.ExtractCurrent();
             }
