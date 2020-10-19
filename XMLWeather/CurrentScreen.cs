@@ -45,6 +45,11 @@ namespace XMLWeather
                 BackgroundImage = Properties.Resources.Blue_Background;
             }
 
+            if (timeLabel.Text != DateTime.Now.ToString("dd-MM-yy hh:mm"))
+            {
+                Form1.ExtractCurrent();
+            }
+
 
         }
 

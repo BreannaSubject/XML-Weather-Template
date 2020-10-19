@@ -114,7 +114,7 @@
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(83, 28);
             this.forecastLabel.TabIndex = 41;
-            this.forecastLabel.Text = "7 Day";
+            this.forecastLabel.Text = "5 Day";
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
             // label5
