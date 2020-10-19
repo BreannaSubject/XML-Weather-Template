@@ -51,11 +51,13 @@
             this.iconBox3 = new System.Windows.Forms.PictureBox();
             this.iconBox4 = new System.Windows.Forms.PictureBox();
             this.iconBox5 = new System.Windows.Forms.PictureBox();
+            this.iconBox0 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBox0)).BeginInit();
             this.SuspendLayout();
             // 
             // forecastLabel
@@ -308,12 +310,23 @@
             this.iconBox5.TabIndex = 83;
             this.iconBox5.TabStop = false;
             // 
+            // iconBox0
+            // 
+            this.iconBox0.BackColor = System.Drawing.Color.Transparent;
+            this.iconBox0.Location = new System.Drawing.Point(3, 0);
+            this.iconBox0.Name = "iconBox0";
+            this.iconBox0.Size = new System.Drawing.Size(29, 22);
+            this.iconBox0.TabIndex = 84;
+            this.iconBox0.TabStop = false;
+            this.iconBox0.Visible = false;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.Grey_Background;
+            this.Controls.Add(this.iconBox0);
             this.Controls.Add(this.iconBox5);
             this.Controls.Add(this.iconBox4);
             this.Controls.Add(this.iconBox3);
@@ -344,6 +357,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBox0)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,5 +387,6 @@
         private System.Windows.Forms.PictureBox iconBox3;
         private System.Windows.Forms.PictureBox iconBox4;
         private System.Windows.Forms.PictureBox iconBox5;
+        private System.Windows.Forms.PictureBox iconBox0;
     }
 }

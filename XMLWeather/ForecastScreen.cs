@@ -20,7 +20,7 @@ namespace XMLWeather
 
         public void displayForecast()
         {
-            List<PictureBox> icons = new List<PictureBox>(new PictureBox [] {iconBox1, iconBox2, iconBox3, iconBox4, iconBox5 });
+            List<PictureBox> icons = new List<PictureBox>(new PictureBox [] { iconBox0,iconBox1, iconBox2, iconBox3, iconBox4, iconBox5 });
             double minTempOne = Math.Round(Convert.ToDouble(Form1.days[1].tempLow));
             double maxTempOne = Math.Round(Convert.ToDouble(Form1.days[1].tempHigh));
             DateTime dateOne = Convert.ToDateTime(Form1.days[1].date);
@@ -61,7 +61,7 @@ namespace XMLWeather
             min5.Text = minTempFive.ToString("#") + "°C";
             max5.Text = maxTempFive.ToString("#") + "°C";
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6 ; i++)
             {
                 Image newimage;
                 

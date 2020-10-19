@@ -31,7 +31,7 @@ namespace XMLWeather
             tempLabel.Text = currentTemp.ToString("#") + "°C";
             minOutput.Text = minTemp.ToString("#") + "°C";
             maxOutput.Text = maxTemp.ToString("#") + "°C";
-            timeLabel.Text = "Last Updated: " + currentTime.ToString("dd-MM-yy hh:mm tt");
+            timeLabel.Text = "Last Updated: " + currentTime.ToString("dd-MM-yy hh:mm tt") + " UTC";
 
             if (currentTemp >= 20)
             {
@@ -46,7 +46,7 @@ namespace XMLWeather
                 BackgroundImage = Properties.Resources.Blue_Background;
             }
 
-            if (timeLabel.Text != currentTime.ToString("dd-MM-yy hh:mm"))
+            if (timeLabel.Text != DateTime.Now.ToString("dd-MM-yy hh:mm tt") + " UTC")
             {
                 Form1.ExtractCurrent();
             }
