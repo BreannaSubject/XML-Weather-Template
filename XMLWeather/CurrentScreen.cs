@@ -23,6 +23,8 @@ namespace XMLWeather
         public void DisplayCurrent()
         {
             DateTime currentTime = Convert.ToDateTime(Form1.days[0].date);
+            DateTime sunrise = Convert.ToDateTime(Form1.days[0].sunrise);
+            DateTime sunset = Convert.ToDateTime(Form1.days[0].sunset);
             double currentTemp = Math.Round(Convert.ToDouble(Form1.days[0].currentTemp));
             double minTemp = Math.Round(Convert.ToDouble(Form1.days[0].tempLow));
             double maxTemp = Math.Round(Convert.ToDouble(Form1.days[0].tempHigh));
@@ -31,6 +33,8 @@ namespace XMLWeather
             tempLabel.Text = currentTemp.ToString("#") + "°C";
             minOutput.Text = minTemp.ToString("#") + "°C";
             maxOutput.Text = maxTemp.ToString("#") + "°C";
+            sunriseLabel.Text = "Sunrise: " + sunrise.ToString("dddd hh:mm tt") + " UTC";
+            sunsetLabel.Text = "Sunset: " + sunset.ToString("dddd hh:mm tt") + " UTC";
             timeLabel.Text = "Last Updated: " + currentTime.ToString("dd-MM-yy hh:mm tt") + " UTC";
 
             if (currentTemp >= 20)

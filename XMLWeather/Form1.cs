@@ -36,9 +36,9 @@ namespace XMLWeather
 
         public static void ExtractForecast()
         {
-            //XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Seoul,KR&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Seoul,KR&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
-            XmlReader reader = XmlReader.Create("WeatherData7Day.xml");
+            //XmlReader reader = XmlReader.Create("WeatherData7Day.xml");
 
             while (reader.Read())
             {
@@ -63,13 +63,17 @@ namespace XMLWeather
         public static void ExtractCurrent()
         {
             // current info is not included in forecast file so we need to use this file to get it
-            //XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Seoul,KR&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Seoul,KR&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
-            XmlReader reader = XmlReader.Create("WeatherData.xml");
+            //XmlReader reader = XmlReader.Create("WeatherData.xml");
             //TODO: find the city and current temperature and add to appropriate item in days list
 
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
+
+            reader.ReadToFollowing("sun");
+            days[0].sunrise = reader.GetAttribute("rise");
+            days[0].sunset = reader.GetAttribute("set");
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");

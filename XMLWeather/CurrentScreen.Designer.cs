@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
+            this.sunsetLabel = new System.Windows.Forms.Label();
+            this.sunriseLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -162,7 +164,29 @@
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(340, 28);
             this.timeLabel.TabIndex = 45;
-            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // sunsetLabel
+            // 
+            this.sunsetLabel.BackColor = System.Drawing.Color.Transparent;
+            this.sunsetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sunsetLabel.ForeColor = System.Drawing.Color.White;
+            this.sunsetLabel.Location = new System.Drawing.Point(347, 104);
+            this.sunsetLabel.Name = "sunsetLabel";
+            this.sunsetLabel.Size = new System.Drawing.Size(340, 28);
+            this.sunsetLabel.TabIndex = 46;
+            this.sunsetLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // sunriseLabel
+            // 
+            this.sunriseLabel.BackColor = System.Drawing.Color.Transparent;
+            this.sunriseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sunriseLabel.ForeColor = System.Drawing.Color.White;
+            this.sunriseLabel.Location = new System.Drawing.Point(347, 64);
+            this.sunriseLabel.Name = "sunriseLabel";
+            this.sunriseLabel.Size = new System.Drawing.Size(340, 28);
+            this.sunriseLabel.TabIndex = 47;
+            this.sunriseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CurrentScreen
             // 
@@ -170,6 +194,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.Grey_Background;
+            this.Controls.Add(this.sunriseLabel);
+            this.Controls.Add(this.sunsetLabel);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -201,5 +227,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label sunsetLabel;
+        private System.Windows.Forms.Label sunriseLabel;
     }
 }
