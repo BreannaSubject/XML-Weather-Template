@@ -52,6 +52,7 @@
             this.iconBox4 = new System.Windows.Forms.PictureBox();
             this.iconBox5 = new System.Windows.Forms.PictureBox();
             this.iconBox0 = new System.Windows.Forms.PictureBox();
+            this.timeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconBox3)).BeginInit();
@@ -320,12 +321,24 @@
             this.iconBox0.TabStop = false;
             this.iconBox0.Visible = false;
             // 
+            // timeLabel
+            // 
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeLabel.ForeColor = System.Drawing.Color.White;
+            this.timeLabel.Location = new System.Drawing.Point(347, 13);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(340, 28);
+            this.timeLabel.TabIndex = 85;
+            this.timeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.Grey_Background;
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.iconBox0);
             this.Controls.Add(this.iconBox5);
             this.Controls.Add(this.iconBox4);
@@ -388,5 +401,6 @@
         private System.Windows.Forms.PictureBox iconBox4;
         private System.Windows.Forms.PictureBox iconBox5;
         private System.Windows.Forms.PictureBox iconBox0;
+        private System.Windows.Forms.Label timeLabel;
     }
 }

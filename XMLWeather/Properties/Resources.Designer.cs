@@ -93,6 +93,16 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mist {
+            get {
+                object obj = ResourceManager.GetObject("Mist", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rain3 {
             get {
                 object obj = ResourceManager.GetObject("Rain3", resourceCulture);
@@ -147,6 +157,55 @@ namespace XMLWeather.Properties {
             get {
                 object obj = ResourceManager.GetObject("Thunderstorms", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;current&gt;
+        ///	&lt;city id=&quot;6157977&quot; name=&quot;Stratford&quot;&gt;
+        ///		&lt;coord lon=&quot;-80.95&quot; lat=&quot;43.37&quot;&gt;&lt;/coord&gt;
+        ///		&lt;country&gt;CA&lt;/country&gt;
+        ///		&lt;sun rise=&quot;2017-04-19T10:33:15&quot; set=&quot;2017-04-20T00:12:51&quot;&gt;&lt;/sun&gt;
+        ///	&lt;/city&gt;
+        ///	&lt;temperature value=&quot;18.05&quot; min=&quot;17&quot; max=&quot;19&quot; unit=&quot;metric&quot;&gt;&lt;/temperature&gt;
+        ///	&lt;humidity value=&quot;88&quot; unit=&quot;%&quot;&gt;&lt;/humidity&gt;
+        ///	&lt;pressure value=&quot;1015&quot; unit=&quot;hPa&quot;&gt;&lt;/pressure&gt;
+        ///	&lt;wind&gt;
+        ///		&lt;speed value=&quot;4.1&quot; name=&quot;Gentle Breeze&quot;&gt;&lt;/speed&gt;
+        ///		&lt;gusts&gt;&lt;/gusts&gt;
+        ///		&lt;direction value=&quot;250&quot; code=&quot;WSW&quot; name [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WeatherData {
+            get {
+                return ResourceManager.GetString("WeatherData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+        ///&lt;weatherdata&gt;
+        ///	&lt;location&gt;
+        ///		&lt;name&gt;Stratford&lt;/name&gt;
+        ///		&lt;type&gt;&lt;/type&gt;
+        ///		&lt;country&gt;CA&lt;/country&gt;
+        ///		&lt;timezone&gt;&lt;/timezone&gt;
+        ///		&lt;location altitude=&quot;0&quot; latitude=&quot;43.3668&quot; longitude=&quot;-80.9498&quot; geobase=&quot;geonames&quot; geobaseid=&quot;6157977&quot;&gt;&lt;/location&gt;
+        ///	&lt;/location&gt;
+        ///	&lt;credit&gt;&lt;/credit&gt;
+        ///	&lt;meta&gt;
+        ///		&lt;lastupdate&gt;&lt;/lastupdate&gt;
+        ///		&lt;calctime&gt;0.2501&lt;/calctime&gt;
+        ///		&lt;nextupdate&gt;&lt;/nextupdate&gt;
+        ///	&lt;/meta&gt;
+        ///	&lt;sun rise=&quot;2017-04-19T10:33:15&quot; set=&quot;2017-04-20T00:12:50&quot;&gt;&lt;/sun&gt;
+        ///	&lt;forecast&gt;
+        ///		&lt;time day=&quot;2017-04-19&quot;&gt;
+        ///			 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WeatherData7Day {
+            get {
+                return ResourceManager.GetString("WeatherData7Day", resourceCulture);
             }
         }
     }

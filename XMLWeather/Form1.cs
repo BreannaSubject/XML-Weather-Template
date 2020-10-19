@@ -20,6 +20,7 @@ namespace XMLWeather
         public static Image snowy = Properties.Resources.Snowy;
         public static Image sunny = Properties.Resources.Sunny;
         public static Image rainy = Properties.Resources.Rainy;
+        public static Image foggy = Properties.Resources.Mist;
 
         public Form1()
         {
@@ -33,9 +34,11 @@ namespace XMLWeather
             this.Controls.Add(cs);
         }
 
-        private void ExtractForecast()
+        public static void ExtractForecast()
         {
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Seoul,KR&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
+            //XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Seoul,KR&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
+
+            XmlReader reader = XmlReader.Create("WeatherData7Day.xml");
 
             while (reader.Read())
             {
@@ -60,8 +63,9 @@ namespace XMLWeather
         public static void ExtractCurrent()
         {
             // current info is not included in forecast file so we need to use this file to get it
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Seoul,KR&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+            //XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Seoul,KR&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
+            XmlReader reader = XmlReader.Create("WeatherData.xml");
             //TODO: find the city and current temperature and add to appropriate item in days list
 
             reader.ReadToFollowing("city");

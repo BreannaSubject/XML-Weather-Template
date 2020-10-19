@@ -77,6 +77,10 @@ namespace XMLWeather
             {
                 e.Graphics.DrawImage(Form1.snowy, this.Width / 2 - ICON_SIZE/2, this.Height / 2 - ICON_SIZE/2, ICON_SIZE, ICON_SIZE);
             }
+            else if (Convert.ToDouble(Form1.days[0].condition) >= 700)
+            {
+                e.Graphics.DrawImage(Form1.foggy, this.Width / 2 - ICON_SIZE / 2, this.Height / 2 - ICON_SIZE / 2, ICON_SIZE, ICON_SIZE);
+            }
             else if (Convert.ToDouble(Form1.days[0].condition) == 800)
             {
                 e.Graphics.DrawImage(Form1.sunny, this.Width / 2 - ICON_SIZE/2, this.Height / 2 - ICON_SIZE/2, ICON_SIZE, ICON_SIZE);

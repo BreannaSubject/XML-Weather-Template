@@ -127,6 +127,9 @@
   <data name="Grey_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Grey Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Rain3" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3492,5 +3495,11 @@
   </data>
   <data name="Thunderstorms" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thunderstorms.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WeatherData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WeatherData.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="WeatherData7Day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WeatherData7Day.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

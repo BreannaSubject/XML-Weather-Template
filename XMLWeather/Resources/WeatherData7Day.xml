@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weatherdata>
+	<location>
+		<name>Stratford</name>
+		<type></type>
+		<country>CA</country>
+		<timezone></timezone>
+		<location altitude="0" latitude="43.3668" longitude="-80.9498" geobase="geonames" geobaseid="6157977"></location>
+	</location>
+	<credit></credit>
+	<meta>
+		<lastupdate></lastupdate>
+		<calctime>0.2501</calctime>
+		<nextupdate></nextupdate>
+	</meta>
+	<sun rise="2017-04-19T10:33:15" set="2017-04-20T00:12:50"></sun>
+	<forecast>
+		<time day="2017-04-19">
+			<symbol number="501" name="moderate rain" var="10d"></symbol>
+			<precipitation value="4.65" type="rain"></precipitation>
+			<windDirection deg="220" code="SW" name="Southwest"></windDirection>
+			<windSpeed mps="7.37" name="Moderate breeze"></windSpeed>
+			<temperature day="18.05" min="9.46" max="18.32" night="9.46" eve="17.3" morn="18.05"></temperature>
+			<pressure unit="hPa" value="992.57"></pressure>
+			<humidity value="100" unit="%"></humidity>
+			<clouds value="overcast clouds" all="92" unit="%"></clouds>
+		</time>
+		<time day="2017-04-20">
+			<symbol number="502" name="heavy intensity rain" var="10d"></symbol>
+			<precipitation value="22.78" type="rain"></precipitation>
+			<windDirection deg="115" code="ESE" name="East-southeast"></windDirection>
+			<windSpeed mps="6.71" name="Moderate breeze"></windSpeed>
+			<temperature day="12.3" min="7.75" max="15.79" night="9.89" eve="15.79" morn="7.75"></temperature>
+			<pressure unit="hPa" value="988.73"></pressure>
+			<humidity value="100" unit="%"></humidity>
+			<clouds value="overcast clouds" all="92" unit="%"></clouds>
+		</time>
+		<time day="2017-04-21">
+			<symbol number="802" name="scattered clouds" var="03d"></symbol>
+			<precipitation></precipitation>
+			<windDirection deg="290" code="WNW" name="West-northwest"></windDirection>
+			<windSpeed mps="9.42" name="Fresh Breeze"></windSpeed>
+			<temperature day="9.65" min="2.95" max="9.65" night="2.95" eve="6.3" morn="8.34"></temperature>
+			<pressure unit="hPa" value="989.64"></pressure>
+			<humidity value="88" unit="%"></humidity>
+			<clouds value="scattered clouds" all="32" unit="%"></clouds>
+		</time>
+		<time day="2017-04-22">
+			<symbol number="501" name="moderate rain" var="10d"></symbol>
+			<precipitation value="4.16" type="rain"></precipitation>
+			<windDirection deg="359" code="" name=""></windDirection>
+			<windSpeed mps="3.15" name="Light breeze"></windSpeed>
+			<temperature day="12.21" min="6.93" max="12.21" night="6.93" eve="9.52" morn="9.36"></temperature>
+			<pressure unit="hPa" value="994.94"></pressure>
+			<humidity value="0" unit="%"></humidity>
+			<clouds value="overcast clouds" all="93" unit="%"></clouds>
+		</time>
+		<time day="2017-04-23">
+			<symbol number="800" name="sky is clear" var="01d"></symbol>
+			<precipitation value="1.32" type="rain"></precipitation>
+			<windDirection deg="324" code="NW" name="Northwest"></windDirection>
+			<windSpeed mps="6.89" name="Moderate breeze"></windSpeed>
+			<temperature day="10.85" min="1.58" max="10.85" night="1.58" eve="8.56" morn="6.77"></temperature>
+			<pressure unit="hPa" value="989.73"></pressure>
+			<humidity value="0" unit="%"></humidity>
+			<clouds value="few clouds" all="14" unit="%"></clouds>
+		</time>
+		<time day="2017-04-24">
+			<symbol number="800" name="sky is clear" var="01d"></symbol>
+			<precipitation value="0.03" type="snow"></precipitation>
+			<windDirection deg="351" code="" name=""></windDirection>
+			<windSpeed mps="8.05" name="Fresh Breeze"></windSpeed>
+			<temperature day="0.65" min="-3.19" max="0.65" night="-3.19" eve="0.55" morn="-1.93"></temperature>
+			<pressure unit="hPa" value="1002.78"></pressure>
+			<humidity value="0" unit="%"></humidity>
+			<clouds value="overcast clouds" all="92" unit="%"></clouds>
+		</time>
+		<time day="2017-04-25">
+			<symbol number="800" name="sky is clear" var="01d"></symbol>
+			<precipitation></precipitation>
+			<windDirection deg="82" code="E" name="East"></windDirection>
+			<windSpeed mps="4.24" name="Gentle Breeze"></windSpeed>
+			<temperature day="5.02" min="-2.93" max="5.36" night="0.27" eve="5.36" morn="-2.93"></temperature>
+			<pressure unit="hPa" value="1007.45"></pressure>
+			<humidity value="0" unit="%"></humidity>
+			<clouds value="clear sky" all="7" unit="%"></clouds>
+		</time>
+	</forecast>
+</weatherdata>
